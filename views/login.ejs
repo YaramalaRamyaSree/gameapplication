@@ -1,0 +1,38 @@
+<%- include('partials/header'); -%>
+<main>
+  <div class="login-card-container">
+    <div class="card">
+      <form class="text-center" action="/login" method="post" onsubmit="validate()">
+        <p class="errorFeedback alert-danger" style="color:lightcoral"><%=error%></p>
+        <input
+          name="username"
+          type="text"
+          class="form-control"
+          placeholder="Username"
+          required
+          autocomplete="off"
+        />
+        <br />
+        <input
+          name="password"
+          type="password"
+          class="form-control"
+          placeholder="Password"
+          required
+        />
+        <br />
+        <div class="text-center login-btn">
+          <button type="submit" class="btn btn-outline-dark">Login</button>
+        </div>
+        <hr />
+        <div class="text-center login-btn">
+          <a href="/register"
+            >New user ? click here to Register</a
+          >
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+<script src="/js/validation.js"></script>
+<%- include('partials/footer'); -%>

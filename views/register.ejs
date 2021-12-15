@@ -1,0 +1,93 @@
+<%- include('partials/header'); -%>
+<main>
+  <div class="login-card-container">
+    <div class="card">
+      <form class="text-center" action="/register" method="post">
+        <input
+          id="username"
+          name="username"
+          type="text"
+          class="form-control"
+          placeholder="Username"
+          required
+          autocomplete="off"
+        />
+        <br />
+        <input
+          id="email"
+          name="email"
+          type="email"
+          class="form-control"
+          placeholder="Email-address"
+          required
+          autocomplete="off"
+        />
+        <br />
+        <input
+          id="mobile"
+          name="mobile"
+          type="Number"
+          class="form-control"
+          placeholder="Mobile"
+          step="1"
+          min="0"
+          max="9999999999"
+          required
+          autocomplete="off"
+        />
+        <br />
+        <input
+          id="password"
+          name="password"
+          type="password"
+          class="form-control"
+          placeholder="Password"
+          aria-describedby="passwordSafetyHint"
+          required
+        />
+        <div
+          id="passwordSafetyHint"
+          class="form-text"
+          style="color: lightgrey"
+        >
+          6-30 characters long & a mix of letters (upper and lower case) ,
+          symbols , numbers
+        </div>
+        <br />
+        <input
+          id="confirmPassword"
+          name="confirmPassword"
+          type="password"
+          class="form-control"
+          placeholder="Confirm Password"
+          required
+        />
+        <br />
+        <p class="errorFeedback" style="color: red"><%=error%></p>
+        <hr />
+        <div class="text-center login-btn">
+          <button
+            id="register"
+            type="button"
+            class="btn btn-outline-dark"
+            onclick="validate()"
+          >
+            Register
+          </button>
+          <hr />
+          <button type="reset" class="btn btn-outline-dark">Reset</button>
+          <button
+            id="submit"
+            type="submit"
+            class="btn btn-primary"
+            style="visibility: hidden"
+          >
+            submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+<script src="/js/validation.js"></script>
+<%- include('partials/footer'); -%>

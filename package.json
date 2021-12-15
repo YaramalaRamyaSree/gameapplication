@@ -1,0 +1,21 @@
+{
+  "name": "task-1",
+  "version": "1.0.0",
+  "description": "Lab task 1",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lalithaditya",
+  "license": "ISC",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.0.11",
+    "passport": "^0.5.0",
+    "passport-local-mongoose": "^6.1.0"
+  }
+}

@@ -1,0 +1,163 @@
+html,
+body {
+  background-color:#f2f2f2;
+  height: 100%;
+  font-family: 'Montserrat-dark', sans-serif;
+}
+
+.form-select {
+  margin: 2px auto 4px auto;
+  width: 240px;
+}
+
+.heading {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.container-sm {
+  min-height: 74vh;
+}
+
+.container-sm .card {
+  border: none;
+  background-color:#f2f2f2;
+
+}
+
+.container-sm .row {
+  max-width: 1000px;
+}
+
+.container-sm .row .col .card {
+  min-width: 200px;
+}
+
+.container-sm .card .card-body input {
+  width: 4rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+}
+
+.container-sm .card .logo-container {
+  border-radius: 30%;
+  box-shadow: 0px -8px 17px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px -8px 17px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -8px 17px -5px rgba(0, 0, 0, 0.75);
+  width: 200px;
+  height: 200px;
+  margin-left: 2em;
+  margin-right: 2em;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container-sm .card .logo-container img {
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  transition: width 0.6s, height 0.6s, transform 1s ease-in-out;
+}
+
+.container-sm .card .logo-container img:hover {
+  width: 120%;
+  height: 120%;
+  transform: rotate(1deg);
+}
+
+.card-text {
+  color: darkorange;
+}
+
+.row {
+  width: 100%;
+}
+
+.container-sm .card .logo-container:hover {
+  box-shadow: -1px -9px 71px 0px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: -1px -9px 71px 0px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: -1px -9px 71px 0px rgba(0, 0, 0, 0.65);
+}
+
+#numCards {
+  width: 100%;
+}
+
+.logout-button {
+  margin-bottom: 0.6rem;
+}
+
+#player1Num,
+#player2Num,
+#player3Num,
+#player4Num,
+#player5Num,
+#player6Num {
+  animation-name: bounce;
+  animation-duration: 1s;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+} 
+
+/* LOGIN STYLES */
+
+main {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .login-card-container {
+  width: 31rem;
+  min-height: 19rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+main .login-card-container .card {
+  border: none;
+  background-color:#f2f2f2;
+  margin: 1rem;
+}
+
+main .login-card-container .card form input {
+  height: 3rem;
+  border-radius: 2rem;
+}
+
+main .card .login-btn button {
+  width: 70%;
+  border-radius: 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  main {
+    flex-direction: column;
+    min-height: 74vh;
+  }
+  main .login-card-container {
+    margin-top: 1rem;
+    width: 40rem;
+    min-height: 22rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main .login-card-container {
+    width: 21rem;
+    min-height: 20rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  main .login-card-container {
+    width: 18rem;
+    min-height: 20rem;
+  }
+}
